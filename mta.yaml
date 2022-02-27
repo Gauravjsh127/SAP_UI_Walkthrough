@@ -1,0 +1,14 @@
+ID: sap_ui_walkthrough
+_schema-version: 3.3.0
+version: 0.0.1
+
+modules:
+  - name: front-end-app
+    type: applications
+    path: ./
+    parameters:
+      buildpacks: nodejs_buildpack
+      memory: 512M
+      tasks: 
+        - name: task-abc-1
+          command: npm install
